@@ -1,4 +1,6 @@
-echo dnf install nginx -y >>/tmp/friday.log
+
+akhil_file=/tmp/friday.log
+echo dnf install nginx -y >>akhil_file
 
 echo systemctl enable nginx
 echo systemctl start nginx
@@ -7,5 +9,5 @@ echo curl -o /tmp/frontend.zip https://expense-artifacts.s3.amazonaws.com/fronte
 echo cp friday.conf  /etc/nginx/default.d/friday.conf
 
 echo cd /usr/share/nginx/html
-echo unzip /tmp/frontend.zip
+echo unzip /tmp/frontend.zip >>akhil_file
 echo systemctl restart nginxecho
