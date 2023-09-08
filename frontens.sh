@@ -1,7 +1,7 @@
 
 akhil_file=/tmp/friday.log
 echo dnf install nginx -y >>akhil_file
-
+echo $?
 echo systemctl enable nginx
 echo systemctl start nginx
 echo rm -rf /usr/share/nginx/html/*
