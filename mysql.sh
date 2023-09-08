@@ -1,6 +1,6 @@
 dnf module disable mysql -y
 
-cp akhil.conf /etc/yum.repos.d/akhil.conf
+cp akhil.repo /etc/yum.repos.d/akhil.repo
 dnf install mysql-community-server -y
 systemctl enable mysqld
 systemctl start mysqld
