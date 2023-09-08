@@ -10,4 +10,4 @@ echo cp friday.conf  /etc/nginx/default.d/friday.conf
 echo $?
 echo cd /usr/share/nginx/html
 echo unzip /tmp/frontend.zip >>akhil_file
-echo systemctl restart nginxecho
+echo systemctl restart nginxe >>akhil_file
