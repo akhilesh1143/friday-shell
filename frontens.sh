@@ -1,4 +1,4 @@
-echo dnf install nginx -y
+echo dnf install nginx -y >>/tmp/friday.log
 
 echo systemctl enable nginx
 echo systemctl start nginx
